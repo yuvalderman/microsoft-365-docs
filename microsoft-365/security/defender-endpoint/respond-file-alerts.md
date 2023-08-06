@@ -155,14 +155,21 @@ The **Download file** button can have the following states:
 
 - **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
 
-  The following permissions are required: 
+The following permissions are required:
 
-    For Portable Executable file (.exe, .sys, .dll, and others)
-    - Global admin or Advanced live response or Alerts 
+For Microsoft 365 Defender Unified role-based access control (RBAC):
 
-    Non-Portable Executable file (.txt, .docx, and others) 
-    - Global admin or Advanced live response
-    - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
+  Add 'File collection' permission in Microsoft 365 Defender Unified (RBAC)
+  [https://learn.microsoft.com/en-us/microsoft-365/security/defender/manage-rbac?view=o365-worldwide]
+      
+For Microsoft Defender for Endpoint role-based access control (RBAC):
+
+ For Portable Executable file (.exe, .sys, .dll, and others)
+ - Global admin or Advanced live response or Alerts 
+
+ Non-Portable Executable file (.txt, .docx, and others) 
+ - Global admin or Advanced live response
+ - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
